@@ -13,6 +13,10 @@
 
 Route::get('contact', 'WelcomeController@contact');
 
+Route::get('articles', 'AriticlesController@index');
+
+Route::get('task', 'TaskController@index');
+
 Route::get('about', 'AboutController@index');
 
 Route::get('/', function () {
