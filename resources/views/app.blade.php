@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Contact page</title>     
+        <title> @yield('title') page</title>     
     </head>
     <body>
         <div class="container">

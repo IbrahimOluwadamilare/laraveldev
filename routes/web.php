@@ -17,6 +17,8 @@ Route::get('articles', 'AriticlesController@index');
 
 Route::get('task', 'TaskController@index');
 
+Route::get('task/{id}', 'TaskController@task');
+
 Route::get('about', 'AboutController@index');
 
 Route::get('/', function () {

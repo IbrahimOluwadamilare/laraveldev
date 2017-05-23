@@ -13,9 +13,14 @@ use Illuminate\Http\Request;
 class TaskController extends Controller
 {
     //
-    public function index(){
-        $task = Task::all();
-        return $task;
+    public function index()
+    {
+        $tasks = Task::all();
+        return view('task',compact('tasks'));
+    }
 
+    public function task($id){
+        $tasks= Task::findorfail($id);
+        return view('taskid',compact('tasks'));
     }
 }
